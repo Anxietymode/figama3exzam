@@ -1,0 +1,99 @@
+.macbook-banner {
+  background: #ffe7d6;
+  border-radius: 6px;
+  padding: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.macbook-content {
+  max-width: 50%;
+}
+
+.macbook-content h2 {
+  font-size: 30px;
+  margin: 16px 0;
+  color: #191c1f;
+}
+
+.macbook-content p {
+  color: #475156;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.macbook-tag {
+  background: #2da5f3;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.macbook-img-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.macbook-banner .macbook-img-wrap img {
+  width: 520px;
+  border-radius: 8px;
+}
+
+.macbook-price-badge {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  background: #FFCEAD;
+  color: #191c1f;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+@media (max-width: 992px) {
+  .macbook-banner .macbook-img-wrap img { width: 380px; }
+  .macbook-content h2 { font-size: 28px; }
+  .macbook-banner { padding: 32px; }
+}
+
+@media (max-width: 768px) {
+  .macbook-banner { flex-direction: column; text-align: center; gap: 20px; }
+  .macbook-content { max-width: 100%; }
+  .macbook-banner .macbook-img-wrap img { width: 320px; }
+}
+
+@media (max-width: 576px) {
+  .macbook-banner { padding: 24px; min-width: 0; }
+  .macbook-content { min-width: 0; }
+  .macbook-content h2 { font-size: 24px; overflow-wrap: anywhere; }
+  .macbook-content p { font-size: 14px; }
+  .macbook-banner .macbook-img-wrap img { width: 240px; max-width: 100%; }
+  .macbook-price-badge { width: 60px; height: 60px; font-size: 14px; }
+}
+
+@media (max-width: 400px) {
+  .macbook-banner { padding: 20px 16px; gap: 16px; }
+  .macbook-content h2 { font-size: 20px; }
+  .macbook-content p { font-size: 13px; margin-bottom: 16px; }
+  .macbook-banner .macbook-img-wrap img { width: 200px; }
+  .macbook-price-badge { width: 52px; height: 52px; font-size: 12px; top: 4px; left: 8px; }
+  .macbook-tag { font-size: 11px; padding: 3px 8px; }
+}
+
+@media (max-width: 360px) {
+  .macbook-banner { padding: 16px 12px; }
+  .macbook-content h2 { font-size: 18px; }
+  .macbook-banner .macbook-img-wrap img { width: 180px; }
+  .macbook-price-badge { width: 48px; height: 48px; font-size: 11px; }
+}
