@@ -1,0 +1,463 @@
+.like-page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.breadcrumb-bar {
+  padding: 14px 0;
+  font-size: 13px;
+  color: #5f6c72;
+}
+
+.breadcrumb-inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.home-icon {
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.bc-sep {
+  color: #77878f;
+}
+
+.active-bc {
+  color: #0066ff;
+  font-weight: 500;
+}
+
+.like-main-content {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.like-actions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #191c1f;
+}
+
+.back-icon-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #e4e7e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.like-header-icon {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #ee5858;
+}
+
+.like-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.like-subtitle {
+  color: #5f6c72;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.items-count-head {
+  font-size: 14px;
+  font-weight: 600;
+  color: #191c1f;
+  margin-bottom: 16px;
+}
+
+.like-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.like-card {
+  border: 1px solid #e4e7e9;
+  border-radius: 6px;
+  padding: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.like-img-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background: #f5f5f5;
+}
+
+.like-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.like-remove-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #929fa5;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.like-remove-btn:hover {
+  color: #ee5858;
+  background: #fff;
+}
+
+.like-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.like-card-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: #191c1f;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.like-card-price-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.curr-price {
+  font-weight: 700;
+  color: #ee5858;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #929fa5;
+}
+
+.like-add-btn {
+  margin-top: auto;
+  width: 100%;
+  background: #0066ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+
+.like-add-btn:hover {
+  background: #0052cc;
+}
+
+.suggested-section {
+  margin-top: 50px;
+}
+
+.suggested-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.suggested-header h3 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #191c1f;
+}
+
+.suggested-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.suggested-card {
+  border: 1px solid #e4e7e9;
+  border-radius: 6px;
+  padding: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.sugg-img-container {
+  position: relative;
+  width: 100%;
+  height: 110px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background: #f5f5f5;
+}
+
+.sugg-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sugg-like-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #929fa5;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.sugg-like-btn:hover {
+  color: #ee5858;
+}
+
+.sugg-name {
+  font-size: 10px;
+  font-weight: 700;
+  color: #191c1f;
+  margin-bottom: 6px;
+}
+
+.sugg-price-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.sugg-price-row .curr-price {
+  font-weight: 700;
+  color: #ee5858;
+}
+
+.sugg-price-row .old-price {
+  text-decoration: line-through;
+  color: #929fa5;
+}
+
+.badge-discount {
+  background: #ee5858;
+  color: #fff;
+  font-size: 9px;
+  padding: 1px 3px;
+  border-radius: 2px;
+  margin-left: auto;
+}
+
+.sugg-add-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #e4e7e9;
+  border-radius: 4px;
+  padding: 5px 0;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #191c1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.sugg-add-btn span {
+  font-weight: 600;
+}
+
+.like-empty {
+  border: 1px dashed #d5d9dc;
+  border-radius: 8px;
+  padding: 48px 20px;
+  text-align: center;
+  background: #f8fafb;
+}
+
+.like-empty h3 {
+  margin: 0 0 8px;
+  color: #222;
+  font-size: 20px;
+}
+
+.like-empty p {
+  margin: 0 0 18px;
+  color: #777;
+  font-size: 14px;
+}
+
+.like-empty .back-to-shop {
+  display: inline-block;
+  height: 40px;
+  padding: 0 24px;
+  border-radius: 6px;
+  background: #ffbd00;
+  color: #111;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .like-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .suggested-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .like-main-content {
+    padding-top: 14px;
+    padding-bottom: 36px;
+  }
+  .page-container {
+    padding: 0 12px;
+  }
+  .like-actions-header {
+    margin-bottom: 14px;
+  }
+  .back-btn {
+    font-size: 15px;
+    gap: 8px;
+  }
+  .back-icon-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+  .back-icon-circle:active {
+    background: #e8edf0;
+  }
+  .like-header-icon:active {
+    transform: scale(0.95);
+  }
+  .like-title {
+    font-size: 26px;
+  }
+  .like-subtitle {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .items-count-head {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .like-grid {
+    gap: 10px;
+  }
+  .like-img-container {
+    height: 130px;
+  }
+  .like-add-btn {
+    padding: 10px 0;
+    font-size: 12px;
+    border-radius: 8px;
+    height: 40px;
+  }
+  .suggested-section {
+    margin-top: 36px;
+  }
+  .suggested-grid {
+    gap: 10px;
+  }
+  .like-empty {
+    padding: 36px 16px;
+  }
+  .like-empty h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .like-title {
+    font-size: 22px;
+  }
+  .like-subtitle {
+    font-size: 12px;
+  }
+  .back-icon-circle {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+  .like-grid {
+    grid-template-columns: 1fr;
+  }
+  .like-img-container {
+    height: 160px;
+  }
+}
+
+.like-empty .back-to-shop {
+  height: 40px;
+}

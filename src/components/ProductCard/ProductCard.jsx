@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaStar, FaRegStar, FaHeart, FaShoppingCart } from 'react-icons/fa';
 import { useCart } from '../../context/cartContext';
+import { useLike } from '../../context/likeContext';
 import './ProductCard.css';
 
 export const ProductCard = ({ product }) => {
   const navigate = useNavigate();
   const { addToCart } = useCart();
-  const [liked, setLiked] = useState(false);
+  const { addToLike, isLiked } = useLike();
+  const liked = isLiked(product.id);
   const [likeTick, setLikeTick] = useState(0);
   const [cartTick, setCartTick] = useState(0);
   const discount = product.oldPrice
@@ -16,8 +18,8 @@ export const ProductCard = ({ product }) => {
 
   const handleLike = (e) => {
     e.stopPropagation();
-    setLiked((prev) => !prev);
     setLikeTick((tick) => tick + 1);
+    addToLike(product);
   };
 
   const handleCart = (e) => {

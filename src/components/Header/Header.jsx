@@ -20,12 +20,14 @@ import {
 import './Header.css';
 import logo from '../../assets/Icon (1).png';
 import { useCart } from '../../context/cartContext';
+import { useLike } from '../../context/likeContext';
 
 import { TOP_BAR } from '../../data/data'; 
 
 export const Header = () => {
   const [isNoticeVisible, setIsNoticeVisible] = useState(true);
   const { cartCount, goToCart } = useCart();
+  const { likeCount, goToLike } = useLike();
 
   return (
     <>
@@ -90,7 +92,10 @@ export const Header = () => {
             <button className="search-submit" aria-label="Search"><FaSearch /></button>
           </div>
           <div className="header-actions">
-            <button className="header-action" aria-label="Wishlist"><FaHeart /></button>
+            <div className="cart-icon-wrapper">
+              <button className="header-action" aria-label="Wishlist" onClick={goToLike}><FaHeart /></button>
+              {likeCount > 0 && <span className="cart-badge">{likeCount}</span>}
+            </div>
             <div className="cart-icon-wrapper">
               <button className="header-action" aria-label="Cart" onClick={goToCart}><FaShoppingCart /></button>
               <span className="cart-badge">{cartCount}</span>
